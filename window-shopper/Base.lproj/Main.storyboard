@@ -42,6 +42,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MY2-T9-vaP">
+                                <rect key="frame" x="20" y="344" width="374" height="62.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="52"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sk-Wt-259">
+                                <rect key="frame" x="137" y="416.5" width="140" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="AYE-iM-FgZ"/>
+                                    <constraint firstAttribute="height" constant="40" id="Fzg-Zm-fLt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mJ-K8-Cuf">
+                                <rect key="frame" x="20" y="791" width="374" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="Ccs-Kl-qxQ"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Clear Calculator">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="clearCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FP8-GY-FUf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -49,20 +79,30 @@
                             <constraint firstItem="RAG-Zs-TtW" firstAttribute="top" secondItem="1u7-3I-B9T" secondAttribute="bottom" constant="35" id="8Si-Eg-6n1"/>
                             <constraint firstItem="IDC-Ob-oPa" firstAttribute="leading" secondItem="RAG-Zs-TtW" secondAttribute="leading" id="955-AF-pfS"/>
                             <constraint firstAttribute="bottom" secondItem="sM3-Fe-l7E" secondAttribute="bottom" id="Cc1-6u-7Q4"/>
+                            <constraint firstAttribute="bottom" secondItem="5mJ-K8-Cuf" secondAttribute="bottom" constant="50" id="EWk-Vs-b2H"/>
                             <constraint firstItem="IDC-Ob-oPa" firstAttribute="top" secondItem="RAG-Zs-TtW" secondAttribute="bottom" constant="25" id="IGr-SA-c8O"/>
                             <constraint firstItem="sM3-Fe-l7E" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J2P-Ob-SY9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RAG-Zs-TtW" secondAttribute="trailing" constant="20" id="JVa-5s-ebM"/>
+                            <constraint firstItem="4sk-Wt-259" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KUS-SB-iid"/>
+                            <constraint firstItem="5mJ-K8-Cuf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Nef-3w-P8p"/>
+                            <constraint firstItem="MY2-T9-vaP" firstAttribute="width" secondItem="IDC-Ob-oPa" secondAttribute="width" id="OIy-rd-gWz"/>
                             <constraint firstItem="sM3-Fe-l7E" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RSU-cx-uRM"/>
                             <constraint firstItem="IDC-Ob-oPa" firstAttribute="height" secondItem="RAG-Zs-TtW" secondAttribute="height" id="RY7-ix-Fnq"/>
+                            <constraint firstItem="MY2-T9-vaP" firstAttribute="top" secondItem="IDC-Ob-oPa" secondAttribute="bottom" constant="45" id="TOT-Td-duO"/>
+                            <constraint firstItem="MY2-T9-vaP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TSb-BL-IlU"/>
                             <constraint firstItem="1u7-3I-B9T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="TbP-vn-tVK"/>
                             <constraint firstItem="1u7-3I-B9T" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vc6-V3-o13"/>
                             <constraint firstItem="IDC-Ob-oPa" firstAttribute="trailing" secondItem="RAG-Zs-TtW" secondAttribute="trailing" id="ca4-nt-J4H"/>
+                            <constraint firstItem="4sk-Wt-259" firstAttribute="top" secondItem="MY2-T9-vaP" secondAttribute="bottom" constant="10" id="fuP-vP-rhU"/>
                             <constraint firstItem="RAG-Zs-TtW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="wNQ-jp-rQx"/>
                             <constraint firstItem="sM3-Fe-l7E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wQk-84-g0Q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5mJ-K8-Cuf" secondAttribute="trailing" constant="20" id="wqc-gH-q0X"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="hoursLB" destination="4sk-Wt-259" id="2Pf-bF-JLw"/>
                         <outlet property="priceTxt" destination="IDC-Ob-oPa" id="mZT-pf-MGO"/>
+                        <outlet property="resultLB" destination="MY2-T9-vaP" id="xJ6-h1-gX0"/>
                         <outlet property="wegeTxt" destination="RAG-Zs-TtW" id="vWU-Bi-ukk"/>
                     </connections>
                 </viewController>
@@ -82,6 +122,9 @@
     <resources>
         <image name="windowShopperBG" width="414" height="736"/>
         <image name="windowShopperIcon" width="115" height="115"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
