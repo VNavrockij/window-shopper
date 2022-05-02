@@ -11,12 +11,15 @@ import UIKit
 class CurrencyTextField: UITextField {
     
     override func prepareForInterfaceBuilder() {
-        
+        customView()
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        
+        customView()
+    }
+    
+    func customView() {
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2487085044)
         layer.cornerRadius = 5.0
         textAlignment = .center
@@ -26,7 +29,7 @@ class CurrencyTextField: UITextField {
             attributedPlaceholder = place
             textColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
-        
     }
+    
 
 }
