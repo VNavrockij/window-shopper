@@ -13,6 +13,7 @@
 		FA175B92281FB83100288FC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA175B90281FB83100288FC4 /* Main.storyboard */; };
 		FA175B94281FB83400288FC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA175B93281FB83400288FC4 /* Assets.xcassets */; };
 		FA175B97281FB83400288FC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA175B95281FB83400288FC4 /* LaunchScreen.storyboard */; };
+		FA175BA2281FBBB100288FC4 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA175BA1281FBBB100288FC4 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FA175B93281FB83400288FC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA175B96281FB83400288FC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA175B98281FB83400288FC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA175BA1281FBBB100288FC4 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		FA175B89281FB83100288FC4 /* window-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				FA175BA0281FBB6600288FC4 /* Views */,
+				FA175B9E281FB9F900288FC4 /* Contorller */,
 				FA175B8A281FB83100288FC4 /* AppDelegate.swift */,
 				FA175B8C281FB83100288FC4 /* SceneDelegate.swift */,
-				FA175B8E281FB83100288FC4 /* ViewController.swift */,
 				FA175B90281FB83100288FC4 /* Main.storyboard */,
 				FA175B93281FB83400288FC4 /* Assets.xcassets */,
 				FA175B95281FB83400288FC4 /* LaunchScreen.storyboard */,
 				FA175B98281FB83400288FC4 /* Info.plist */,
 			);
 			path = "window-shopper";
+			sourceTree = "<group>";
+		};
+		FA175B9E281FB9F900288FC4 /* Contorller */ = {
+			isa = PBXGroup;
+			children = (
+				FA175B8E281FB83100288FC4 /* ViewController.swift */,
+			);
+			path = Contorller;
+			sourceTree = "<group>";
+		};
+		FA175BA0281FBB6600288FC4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA175BA1281FBBB100288FC4 /* CurrencyTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +159,7 @@
 			files = (
 				FA175B8F281FB83100288FC4 /* ViewController.swift in Sources */,
 				FA175B8B281FB83100288FC4 /* AppDelegate.swift in Sources */,
+				FA175BA2281FBBB100288FC4 /* CurrencyTextField.swift in Sources */,
 				FA175B8D281FB83100288FC4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
